@@ -53,7 +53,7 @@
   /* HERO */
   .hero{padding:90px 0 56px; max-width:680px;}
   .hero h1{font-size:52px; line-height:1.1; letter-spacing:-0.01em; margin:20px 0 20px;}
-  .hero h1 em{font-style:normal; color:var(--gold-dark); background:linear-gradient(transparent 62%, var(--gold) 62%); padding:0 2px;}
+  .hero h1 em{font-style:normal; color:var(--gold-dark);}
   .hero p{font-size:17px; color:var(--ink-muted); max-width:520px; margin-bottom:28px;}
   .hero-ctas{display:flex; gap:14px; margin-bottom:34px;}
   .credentials-line{font-size:13px; color:var(--ink-muted); display:flex; gap:10px; align-items:center; min-height:20px;}
@@ -134,6 +134,7 @@
     width:38px; height:38px; border-radius:9px; background:var(--paper-alt);
     display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:600; color:var(--gold-dark); margin-bottom:14px;
   }
+  .why-card .icon svg{width:19px; height:19px;}
   .why-card h3{font-size:16px; margin-bottom:8px;}
   .why-card p{font-size:14px; color:var(--ink-muted);}
   .why-card-cta{
@@ -167,11 +168,13 @@
 
   /* URGENCY BANNER */
   .urgency{
-    margin-top:24px; background:var(--gold); color:var(--ink); border-radius:10px;
+    margin-top:24px; background:var(--paper); color:var(--ink); border-radius:4px 10px 10px 4px;
+    border-left:4px solid var(--gold);
     padding:16px 24px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;
   }
-  .urgency b{font-weight:700;}
-  .urgency .btn{background:var(--ink); color:var(--paper);}
+  .urgency b{font-weight:700; display:flex; align-items:center; gap:8px;}
+  .urgency b::before{content:""; width:8px; height:8px; border-radius:50%; background:var(--gold); display:inline-block;}
+  .urgency .btn{background:var(--gold); color:var(--ink);}
 
   /* FOOTER CTA */
   footer{background:var(--ink); color:var(--paper); padding:64px 0 72px; margin-top:20px;}
@@ -270,8 +273,8 @@
       </div>
       <div class="module">
         <div class="n">02</div>
-        <div><div class="module-head"><h3>Les outils IA du quotidien</h3><span class="duration">1h – 1h15</span></div><p>Gemini, ChatGPT, NotebookLM, Copilot — prise en main et cas d'usage concrets pour un étudiant.</p>
-        <div class="tags"><span class="tag">Gemini</span><span class="tag">NotebookLM</span><span class="tag">Copilot</span></div></div>
+        <div><div class="module-head"><h3>Les outils IA du quotidien</h3><span class="duration">1h – 1h15</span></div><p>Gemini, ChatGPT, Claude, NotebookLM, Notion AI, Canva — prise en main et cas d'usage concrets pour un étudiant.</p>
+        <div class="tags"><span class="tag">Gemini</span><span class="tag">Claude</span><span class="tag">NotebookLM</span></div></div>
       </div>
       <div class="module">
         <div class="n">03</div>
@@ -280,8 +283,8 @@
       </div>
       <div class="module">
         <div class="n">04</div>
-        <div><div class="module-head"><h3>IA pour le brainstorming et la créativité</h3><span class="duration">45 min</span></div><p>Génération d'idées, structuration de projet, design thinking assisté par IA.</p>
-        <div class="tags"><span class="tag">Idéation</span><span class="tag">Design thinking</span><span class="tag">Prototypage</span></div></div>
+        <div><div class="module-head"><h3>IA pour la stratégie et la décision</h3><span class="duration">1h – 1h15</span></div><p>Un cadre en 4 étapes pour structurer une décision avec l'IA, comparer plusieurs options et repérer les biais qui faussent le jugement — ancrage, confirmation.</p>
+        <div class="tags"><span class="tag">Cadre décisionnel</span><span class="tag">Biais cognitifs</span><span class="tag">Cas pratique</span></div></div>
       </div>
       <div class="module">
         <div class="n">05</div>
@@ -365,18 +368,18 @@
     </div>
     <div class="why-grid">
       <div class="why-card">
-        <div class="icon">✓</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 20c0-3.6 2.9-6.2 6.5-6.2s6.5 2.6 6.5 6.2"/></svg></div>
         <h3>Un seul interlocuteur, du début à la fin</h3>
         <p>Je garantis qu'aucun autre intervenant ne me remplacera en cours de programme. Pas d'agence, pas de turnover.</p>
       </div>
       <div class="why-card">
-        <div class="icon">✓</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.8"/></svg></div>
         <h3>Vous voyez avant de signer</h3>
         <p>Je vous transmets un extrait de module — supports, exercices, grille d'évaluation — avant tout engagement de votre part.</p>
         <a href="#contact" class="why-card-cta">Recevoir un extrait du programme →</a>
       </div>
       <div class="why-card">
-        <div class="icon">✓</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="11" width="12" height="9" rx="1.8"/><path d="M7.5 11V7.5a4 4 0 0 1 7.7-1.5"/></svg></div>
         <h3>Aucun engagement au-delà de la session</h3>
         <p>Je garantis un devis clair et aucun contrat pluriannuel imposé — vous restez libres de reconduire ou non.</p>
       </div>
@@ -392,7 +395,8 @@
     <div class="wrap footer-inner">
       <h2>Trouvons le <em>format le plus adapté</em> à votre établissement.</h2>
       <p>Décrivez votre besoin, je reviens vers vous rapidement.</p>
-      <form class="contact-form" id="contact-form" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+      <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
         <label for="cf-name">Nom complet</label>
         <input type="text" id="cf-name" name="name" placeholder="Votre nom" required>
 
@@ -412,13 +416,18 @@
 <script>
   const contactForm = document.getElementById('contact-form');
   const formConfirm = document.getElementById('form-confirm');
+
+  function encodeForNetlify(data) {
+    return new URLSearchParams(data).toString();
+  }
+
   contactForm.addEventListener('submit', function(e){
     e.preventDefault();
     const data = new FormData(contactForm);
-    fetch(contactForm.action, {
+    fetch('/', {
       method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeForNetlify(data)
     }).then(response => {
       if(response.ok){
         contactForm.style.display = 'none';
